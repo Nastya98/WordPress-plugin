@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Template for add events</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+<body>
+	<div id="ma-wrapper">
+		<div id="ma-empty"></div>
+			<div id="ma-container-event">
+				<div class="ma-tabs-lang ma-tabs">
+					<ul class="ma-tabs-caption">
+						<li class=""><a href="#first-tab">Русский</a></li>
+						<li data-tab="tab-2"><a href="#second-tab">Украинский</a></li>
+					</ul>
+					<div id="first-tab" class="tabs-content">
+						<div class="ma-add-new-event">
+							<div class="ma-add-new-event-photo">
+								<div class="ma-empty-img"><span>110x110</span></div>
+								<button class="ma-choose-img ma-btn">Выбрать фотографию</button>
+					<!-- <img src="img/addImage.jpg" align="left" alt="Add image"> -->
+							</div>
+							<form action="" class="ma-form-add">
+								<div class="ma-add-new-event-item">
+									<div class="ma-field">
+										<input type="text" name="name-input" id="name-input" class="ma-form-control" maxlength="70" required>
+										<label for="name-input">Название события</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<select id="city-input" name="city-input" class="ma-form-control" required>
+											<option value="">Выберите город</option>
+  											<option value="Kyiv">Киев</option>
+  											<option value="Kherson">Херсон</option>
+  											<option value="Lutsk">Луцк</option>
+  											<option value="Frankivsk">Ивано-Франковск</option>
+  											<option value="Cherkasy">Черкассы</option>
+  											<option value="Kharkiv">Харьков</option>
+  											<option value="Dnipro">Днепр</option>
+  											<option value="Zhytomyr">Житомир</option>
+  											<option value="Zaporizhia">Запорожье</option>
+  											<option value="Mykolaiv">Николаев</option>
+  											<option value="Ternopil">Тернополь</option>
+  											<option value="Vinnytsia">Винница</option>
+  											<option value="Lviv">Львов</option>
+  											<option value="Odessa">Одесса</option>
+										</select>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div> 
+									<div class="ma-field">
+										<select id="specialty-input" name="specialty-input" class="ma-form-control" required>
+											<option value="">Выберите специальность</option>
+  											<option value="44">Android</option>
+  											<option value="46">FrontEnd</option>
+  											<option value="48">Java</option>
+  											<option value="50">C#</option>
+  											<option value="52">QA</option>
+  											<option value="54">PHP</option>
+  											<option value="56">Python</option>
+  											<option value="58">ISTQB</option>
+  											<option value="60">English</option>
+  											<option value="62">ОП</option>
+  											<option value="104">QA auto</option>
+  											<option value="106">QA mobile</option>
+  											<option value="108">Scrum and Agile</option>
+  											<option value="110">React</option>
+  											<option value="112">BigData</option>
+  											<option value="610">Main School</option>
+  											<option value="846">Альтернативна школа</option>
+  											<option value="848">IT-School</option>
+  											<option value="850">Табір</option>
+										</select>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div> 
+									<div class="ma-field">
+										<input type="datetime-local" name="datetime-input" id="date-input" class="ma-form-control" value="2018-05-01T08:30" required>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="number" name="number-input" id="number-input" class="ma-form-control" min="0" required>
+										<label for="number-input">Цена</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="text" name="url-input" id="url-input" class="ma-form-control" maxlength="70" required>
+										<label for="url-input">URL</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+								</div>
+								<div class="ma-add-new-event-item ma-add-new-more">
+									<div class="ma-add-event-display">
+									<div class="ma-field wrap-tinymce">
+										<textarea name="desription" id="description-input" class="tinymce ma-form-control" maxlength="300" rows="4" cols="50" required></textarea>
+										<p class="ma-icon-info ma-icon-tinymce"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field wrap-tinymce">
+										<textarea name="desription" id="description-input" class="tinymce ma-form-control" maxlength="300" rows="4" cols="50" required></textarea>
+										<p class="ma-icon-info ma-icon-tinymce"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<select name="tevent-input" id="source-input" class="ma-form-control" required>
+											<option value="">Выберите источник</option>
+											<option value="SELF">Заявка</option>
+											<option value="WEB">Сайт</option>
+											<option value="WEBFORM">Шара</option>
+											<option value="EMAIL">E-mail рассылка</option>
+											<option value="4">Чат</option>
+											<option value="CALL">Facebook</option>
+											<option value="ADVERTISING">Vkontakte</option>
+											<option value="CALLBACK">Обратный звонок</option>
+											<option value="2">DOU</option>
+											<option value="1">Linkedin</option>
+											<option value="5">Билет ИТ</option>
+											<option value="RECOMMENDATION">По рекомендации</option>
+											<option value="3">Rabota.ua</option>
+											<option value="7">Work.ua</option>
+											<option value="6">Весенняя акция</option>
+											<option value="OTHER">Інше</option>
+										</select>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>						
+									<div class="ma-field">
+										<input type="text" name="typeevent-input" id="tevent-input" class="ma-form-control" maxlength="70" required>
+										<label for="tevent-input">Тип мероприятия</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="time" id="duration-input" class="ma-form-control">
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="text" name="wroom-input" id="wroom-input" class="ma-form-control" maxlength="70" required>
+										<label for="wroom-input">Вебинарная комната</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<label for="check-input" class="container-checkbox">
+											<input type="checkbox" name="checkbox" id="check-input" class="ma-form-control">SEO<span class="checkmark"></span>
+										</label>
+									</div>	
+								<h3>Страница ивента</h3>
+								<div class="ma-wrap-page-event">
+									<div class="ma-header-page-event">
+										<div class="ma-field">
+											<input type="text" name="title-input" id="title-input" class="ma-form-control" maxlength="70" required>
+											<label for="title-input">Заголовок на главном экране</label>
+											<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+										<div class="ma-field">
+											<input type="text" name="main-subtitle-input" id="main-subtitle-input" class="ma-form-control" maxlength="70" required>
+											<label for="main-subtitle-input">Подзаголовок на главном экране</label>
+											<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+									</div>
+									<h4>О ивенте</h4>
+									<div class="ma-about-page-event">
+										<div class="ma-field">
+											<input type="text" name="subtitle-input" id="subtitle-input" class="ma-form-control" maxlength="70" required>
+											<label for="suntitle-input">Подзаголовок</label>
+											<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+										<div class="ma-field wrap-tinymce">
+											<textarea name="page-desription" id="page-description-input" class="tinymce ma-form-control" maxlength="300" rows="4" cols="40" required></textarea>
+											<p class="ma-icon-info ma-icon-tinymce"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+										<div class="ma-field select-media">
+											<select id="pv-input" name="pv[]" class="ma-form-control">
+												<option value="">Выберите тип медиа файла</option>
+  												<option value=".photo">Фотография</option>
+  												<option value=".video">Видео</option>
+											</select>
+											<div class="value photo">
+												<button class="ma-select-img-event ma-btn">Выбрать фотографию</button>
+											</div>
+											<div class="value video">
+												<input type="text" name="url-input" id="url-video-input" class="ma-form-control" maxlength="70" required>
+												<label for="url-video-input">URL</label>
+											</div>
+										</div>
+									</div>
+									<h4>Спикеры</h4>
+									<div class="ma-speaker-page-event" id="ma-add-speaker">
+										<div class="ma-add-new-event-photo">
+											<div class="ma-empty-img"><span>110x110</span></div>
+											<button class="ma-choose-img ma-btn">Добавить фотографию</button>
+										</div>
+										<div class="ma-field">
+										<input type="text" name="name-input" id="names-input" class="ma-form-control" maxlength="70" required>
+										<label for="names-input">Имя спикера</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="text" name="position-input" id="position-input" class="ma-form-control" maxlength="70" required>
+										<label for="position-input">Должность</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+										<div class="ma-field wrap-tinymce">
+											<textarea name="skills" id="skills-input" class="tinymce ma-form-control" maxlength="300" rows="4" cols="50" required></textarea>
+											<p class="ma-icon-info ma-icon-tinymce"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+									</div>
+									<p href="#" id="add-speaker" class="ma-btn">Добавить спикера</p>
+									<!-- <div class="ma-speaker-page-event">
+										<input type="text" name="name-speaker-input" id="name-speaker-input" class="ma-form-control" maxlength="70" required>
+											<label for="name-input">Имя события</label>
+											<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div> -->
+								</div>				
+								</div>
+								</div>
+								<div class="ma-wrap-btn">
+									<div class="ma-wrap-load-more">
+										<a id="ma-load-more">Загрузить ещё</a>
+									</div>
+									<div class="ma-wrap-btn-add">
+										<button type="submit" id="ma-add-event" class="ma-btn">Добавить</button>
+									</div>
+								</div>
+								
+							</form>
+						</div>
+
+						<div class="ma-current-event">
+							<h3>Текущие ивенты</h3>
+							<div class="ma-tabs-city ma-tabs">
+								<ul class="ma-tabs-caption-city">
+									<li><a href="#first-tab-city">Киев</a></li>
+									<li><a href="#second-tab-city">Одесса</a></li>
+									<li><a href="#third-tab-city">Львов</a></li>
+									<li><a href="#fourth-tab-city">Винница</a></li>
+									<li><a href="#fifth-tab-city">Тернополь</a></li>
+									<li><a href="#sixth-tab-city">Запорожье</a></li>
+									<li><a href="#seventh-tab-city">Харьков</a></li>
+									<li><a href="#eighth-tab-city">Николаев</a></li>
+									<li><a href="#ninth-tab-city">Херсон</a></li>
+								</ul>
+								<div class="ma-current-event-content">
+									<div id="first-tab-city" class="tabs-content-city">
+										<form action="" id="form-current-event" class="form-current">
+											<img src="img/addImage.jpg" alt="" class="ma-current-img">
+											<div class="ma-container-current-event">
+											<div class="ma-field">
+										<input type="text" name="name-input" id="cur-name-input" class="ma-form-control" maxlength="70" required>
+										<label for="cur-name-input">Название события</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<select id="cur-city-input" name="city-input" class="ma-form-control" required>
+											<option value="">Выберите город</option>
+  											<option value="Kyiv">Киев</option>
+  											<option value="Kherson">Херсон</option>
+  											<option value="Lutsk">Луцк</option>
+  											<option value="Frankivsk">Ивано-Франковск</option>
+  											<option value="Cherkasy">Черкассы</option>
+  											<option value="Kharkiv">Харьков</option>
+  											<option value="Dnipro">Днепр</option>
+  											<option value="Zhytomyr">Житомир</option>
+  											<option value="Zaporizhia">Запорожье</option>
+  											<option value="Mykolaiv">Николаев</option>
+  											<option value="Ternopil">Тернополь</option>
+  											<option value="Vinnytsia">Винница</option>
+  											<option value="Lviv">Львов</option>
+  											<option value="Odessa">Одесса</option>
+										</select>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div> 
+									<div class="ma-field">
+										<select id="cur-specialty-input" name="specialty-input" class="ma-form-control" required>
+											<option value="">Выберите специальность</option>
+  											<option value="44">Android</option>
+  											<option value="46">FrontEnd</option>
+  											<option value="48">Java</option>
+  											<option value="50">C#</option>
+  											<option value="52">QA</option>
+  											<option value="54">PHP</option>
+  											<option value="56">Python</option>
+  											<option value="58">ISTQB</option>
+  											<option value="60">English</option>
+  											<option value="62">ОП</option>
+  											<option value="104">QA auto</option>
+  											<option value="106">QA mobile</option>
+  											<option value="108">Scrum and Agile</option>
+  											<option value="110">React</option>
+  											<option value="112">BigData</option>
+  											<option value="610">Main School</option>
+  											<option value="846">Альтернативна школа</option>
+  											<option value="848">IT-School</option>
+  											<option value="850">Табір</option>
+										</select>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div> 
+									<div class="ma-field">
+										<input type="datetime-local" name="datetime-input" id="cur-date-input" class="ma-form-control" value="2018-05-01T08:30" required>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="number" name="number-input" id="cur-number-input" class="ma-form-control" min="0" required>
+										<label for="cur-number-input">Цена</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="text" name="url-input" id="cur-url-input" class="ma-form-control" maxlength="70" required>
+										<label for="cur-url-input">URL</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									</div>
+									<div class="ma-container-current-event ma-current-event-more-ru">
+									<div class="ma-current-event-display">
+									<div class="ma-field wrap-tinymce">
+										<textarea name="desription" id="description-input" class="tinymce ma-form-control" maxlength="300" rows="4" cols="50" required></textarea>
+										<p class="ma-icon-info ma-icon-tinymce"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field wrap-tinymce">
+										<textarea name="desription" id="cur-description-input" class="tinymce ma-form-control" maxlength="300" rows="4" cols="50" required></textarea>
+										<p class="ma-icon-info ma-icon-tinymce"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<select name="tevent-input" id="cur-source-input" class="ma-form-control" required>
+											<option value="">Выберите источник</option>
+											<option value="SELF">Заявка</option>
+											<option value="WEB">Сайт</option>
+											<option value="WEBFORM">Шара</option>
+											<option value="EMAIL">E-mail рассылка</option>
+											<option value="4">Чат</option>
+											<option value="CALL">Facebook</option>
+											<option value="ADVERTISING">Vkontakte</option>
+											<option value="CALLBACK">Обратный звонок</option>
+											<option value="2">DOU</option>
+											<option value="1">Linkedin</option>
+											<option value="5">Билет ИТ</option>
+											<option value="RECOMMENDATION">По рекомендации</option>
+											<option value="3">Rabota.ua</option>
+											<option value="7">Work.ua</option>
+											<option value="6">Весенняя акция</option>
+											<option value="OTHER">Інше</option>
+										</select>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>						
+									<div class="ma-field">
+										<input type="text" name="typeevent-input" id="cur-tevent-input" class="ma-form-control" maxlength="70" required>
+										<label for="cur-tevent-input">Тип мероприятия</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="time" id="cur-duration-input" class="ma-form-control">
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="text" name="wroom-input" id="cur-wroom-input" class="ma-form-control" maxlength="70" required>
+										<label for="cur-wroom-input">Вебинарная комната</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<label for="cur-check-input" class="container-checkbox">
+											<input type="checkbox" name="checkbox" id="cur-check-input" class="ma-form-control">SEO<span class="checkmark"></span>
+										</label>
+									</div>	
+								<h3>Страница ивента</h3>
+								<div class="ma-wrap-page-event">
+									<div class="ma-header-page-event">
+										<div class="ma-field">
+											<input type="text" name="title-input" id="cur-title-input" class="ma-form-control" maxlength="70" required>
+											<label for="cur-title-input">Заголовок на главном экране</label>
+											<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+										<div class="ma-field">
+											<input type="text" name="main-subtitle-input" id="cur-main-subtitle-input" class="ma-form-control" maxlength="70" required>
+											<label for="cur-main-subtitle-input">Подзаголовок на главном экране</label>
+											<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+									</div>
+									<h4>О ивенте</h4>
+									<div class="ma-about-page-event">
+										<div class="ma-field">
+											<input type="text" name="subtitle-input" id="cur-subtitle-input" class="ma-form-control" maxlength="70" required>
+											<label for="cur-suntitle-input">Подзаголовок</label>
+											<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+										<div class="ma-field wrap-tinymce">
+											<textarea name="page-desription" id="cur-page-description-input" class="tinymce ma-form-control" maxlength="300" rows="4" cols="40" required></textarea>
+											<p class="ma-icon-info ma-icon-tinymce"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+										<div class="ma-field select-media">
+											<select id="cur-pv-input" name="pv[]" class="ma-form-control">
+												<option value="">Выберите тип медиа файла</option>
+  												<option value=".photo">Фотография</option>
+  												<option value=".video">Видео</option>
+											</select>
+											<div class="value photo">
+												<button class="ma-select-img-event ma-btn">Выбрать фотографию</button>
+											</div>
+											<div class="value video">
+												<input type="text" name="url-input" id="cur-url-video-input" class="ma-form-control" maxlength="70" required>
+												<label for="cur-url-video-input">URL</label>
+											</div>
+										</div>
+									</div>
+									<h4>Спикеры</h4>
+									<div class="ma-speaker-page-event">
+										<div class="ma-add-new-event-photo">
+											<div class="ma-empty-img"><span>110x110</span></div>
+											<button class="ma-choose-img ma-btn">Добавить фотографию</button>
+										</div>
+										<div class="ma-field">
+										<input type="text" name="name-input" id="cur-names-input" class="ma-form-control" maxlength="70" required>
+										<label for="cur-names-input">Имя спикера</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="text" name="position-input" id="cur-position-input" class="ma-form-control" maxlength="70" required>
+										<label for="cur-position-input">Должность</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+										<div class="ma-field wrap-tinymce">
+											<textarea name="skills" id="cur-skills-input" class="tinymce ma-form-control" maxlength="300" rows="4" cols="50" required></textarea>
+											<p class="ma-icon-info ma-icon-tinymce"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+									</div>
+									<!-- <div class="ma-speaker-page-event">
+										<input type="text" name="name-speaker-input" id="name-speaker-input" class="ma-form-control" maxlength="70" required>
+											<label for="name-input">Имя события</label>
+											<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div> -->
+								</div>				
+								</div>
+								</div>
+								<div class="ma-wrap-btn">
+									<div class="ma-wrap-load-more">
+										<a id="ma-load-current-more-ru" class="ma-load-current-more">Развернуть</a>
+									</div>
+									<div class="ma-wrap-btn-edit">
+										<button id="ma-edit-current-event" class="ma-btn">Редактировать</button>
+										<button id="ma-delete-current-event" class="ma-btn">Удалить</button>
+									</div>
+								</div>
+										</form>
+									</div>
+									<div id="second-tab-city" class="tabs-content-city"></div>
+								</div>
+								
+							</div>
+							
+						</div>
+					</div>
+					<div class="tabs-content" id="second-tab">
+						<div class="ma-add-new-event">
+							<div class="ma-add-new-event-photo">
+								<div class="ma-empty-img"><span>110x110</span></div>
+								<button class="ma-choose-img ma-btn">Обрати фотографію</button>
+					<!-- <img src="img/addImage.jpg" align="left" alt="Add image"> -->
+							</div>
+							<form action="" class="ma-form-add">
+								<div class="ma-add-new-event-item">
+									<div class="ma-field">
+										<input type="text" name="name-input" id="name-input" class="ma-form-control" maxlength="70" required>
+										<label for="name-input">Назва події</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<select id="city-input" name="city-input" class="ma-form-control" required>
+											<option value="">Виберіть місто</option>
+  											<option value="Kyiv">Київ</option>
+  											<option value="Kherson">Херсон</option>
+  											<option value="Lutsk">Луцьк</option>
+  											<option value="Frankivsk">Івано-Франківськ</option>
+  											<option value="Cherkasy">Черкаси</option>
+  											<option value="Kharkiv">Харків</option>
+  											<option value="Dnipro">Дніпро</option>
+  											<option value="Zhytomyr">Житомир</option>
+  											<option value="Zaporizhia">Запоріжжя</option>
+  											<option value="Mykolaiv">Миколаїв</option>
+  											<option value="Ternopil">Тернопіль</option>
+  											<option value="Vinnytsia">Вінниця</option>
+  											<option value="Lviv">Львів</option>
+  											<option value="Odessa">Одеса</option>
+										</select>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div> 
+									<div class="ma-field">
+										<select id="specialty-input" name="specialty-input" class="ma-form-control" required>
+											<option value="">Виберіть спеціальність</option>
+  											<option value="44">Android</option>
+  											<option value="46">FrontEnd</option>
+  											<option value="48">Java</option>
+  											<option value="50">C#</option>
+  											<option value="52">QA</option>
+  											<option value="54">PHP</option>
+  											<option value="56">Python</option>
+  											<option value="58">ISTQB</option>
+  											<option value="60">English</option>
+  											<option value="62">ОП</option>
+  											<option value="104">QA auto</option>
+  											<option value="106">QA mobile</option>
+  											<option value="108">Scrum and Agile</option>
+  											<option value="110">React</option>
+  											<option value="112">BigData</option>
+  											<option value="610">Main School</option>
+  											<option value="846">Альтернативна школа</option>
+  											<option value="848">IT-School</option>
+  											<option value="850">Табір</option>
+										</select>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div> 
+									<div class="ma-field">
+										<input type="datetime-local" name="datetime-input" id="date-input" class="ma-form-control" value="2018-05-01T08:30" required>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="number" name="number-input" id="number-input" class="ma-form-control" min="0" required>
+										<label for="number-input">Ціна</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="text" name="url-input" id="url-input" class="ma-form-control" maxlength="70" required>
+										<label for="url-input">URL</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+								</div>
+								<div class="ma-add-new-event-item ma-add-new-more">
+									<div class="ma-add-event-display">
+									<div class="ma-field wrap-tinymce">
+										<textarea name="desription" id="description-input" class="tinymce ma-form-control" maxlength="300" rows="4" cols="50" required></textarea>
+										<p class="ma-icon-info ma-icon-tinymce"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field wrap-tinymce">
+										<textarea name="desription" id="description-input" class="tinymce ma-form-control" maxlength="300" rows="4" cols="50" required></textarea>
+										<p class="ma-icon-info ma-icon-tinymce"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<select name="tevent-input" id="source-input" class="ma-form-control" required>
+											<option value="">Виберіть джерело</option>
+											<option value="SELF">Заявка</option>
+											<option value="WEB">Сайт</option>
+											<option value="WEBFORM">Шара</option>
+											<option value="EMAIL">E-mail розсилка</option>
+											<option value="4">Чат</option>
+											<option value="CALL">Facebook</option>
+											<option value="ADVERTISING">Vkontakte</option>
+											<option value="CALLBACK">Зворотний дзвінок</option>
+											<option value="2">DOU</option>
+											<option value="1">Linkedin</option>
+											<option value="5">Білет IT</option>
+											<option value="RECOMMENDATION">За рекомендацією</option>
+											<option value="3">Rabota.ua</option>
+											<option value="7">Work.ua</option>
+											<option value="6">Весняна акція</option>
+											<option value="OTHER">Інше</option>
+										</select>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>						
+									<div class="ma-field">
+										<input type="text" name="typeevent-input" id="tevent-input" class="ma-form-control" maxlength="70" required>
+										<label for="tevent-input">Тип події</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="time" id="duration-input" class="ma-form-control">
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="text" name="wroom-input" id="wroom-input" class="ma-form-control" maxlength="70" required>
+										<label for="wroom-input">Вебінарна кімната</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<label for="check-input-ukr" class="container-checkbox">
+											<input type="checkbox" name="checkbox" id="check-input-ukr" class="ma-form-control">SEO<span class="checkmark"></span>
+										</label>
+									</div>	
+								<h3>Сторінка івента</h3>
+								<div class="ma-wrap-page-event">
+									<div class="ma-header-page-event">
+										<div class="ma-field">
+											<input type="text" name="title-input" id="title-input" class="ma-form-control" maxlength="70" required>
+											<label for="title-input">Заголовок на головному екрані</label>
+											<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+										<div class="ma-field">
+											<input type="text" name="main-subtitle-input" id="main-subtitle-input" class="ma-form-control" maxlength="70" required>
+											<label for="main-subtitle-input">Підзаголовок на головному екрані</label>
+											<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+									</div>
+									<h4>О ивенте</h4>
+									<div class="ma-about-page-event">
+										<div class="ma-field">
+											<input type="text" name="subtitle-input" id="subtitle-input" class="ma-form-control" maxlength="70" required>
+											<label for="suntitle-input">Підзаголовок</label>
+											<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+										<div class="ma-field wrap-tinymce">
+											<textarea name="page-desription" id="page-description-input" class="tinymce ma-form-control" maxlength="300" rows="4" cols="40" required></textarea>
+											<p class="ma-icon-info ma-icon-tinymce"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+										<div class="ma-field select-media">
+											<select id="pv-input" name="pv[]" class="ma-form-control">
+												<option value="">Виберіть тип медіа файлу</option>
+  												<option value=".photo">Фотографія</option>
+  												<option value=".video">Відео</option>
+											</select>
+											<div class="value photo">
+												<button class="ma-select-img-event ma-btn">Вибрати фотографію</button>
+											</div>
+											<div class="value video">
+												<input type="text" name="url-input" id="url-video-input" class="ma-form-control" maxlength="70" required>
+												<label for="url-video-input">URL</label>
+											</div>
+										</div>
+									</div>
+									<h4>Спікери</h4>
+									<div class="ma-speaker-page-event">
+										<div class="ma-add-new-event-photo">
+											<div class="ma-empty-img"><span>110x110</span></div>
+											<button class="ma-choose-img ma-btn">Додати фотографію</button>
+										</div>
+										<div class="ma-field">
+										<input type="text" name="name-input" id="names-input" class="ma-form-control" maxlength="70" required>
+										<label for="names-input">Ім'я спікера</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="text" name="position-input" id="position-input" class="ma-form-control" maxlength="70" required>
+										<label for="position-input">Посада</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+										<div class="ma-field wrap-tinymce">
+											<textarea name="skills" id="skills-input" class="tinymce ma-form-control" maxlength="300" rows="4" cols="50" required></textarea>
+											<p class="ma-icon-info ma-icon-tinymce"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+									</div>
+									<!-- <div class="ma-speaker-page-event">
+										<input type="text" name="name-speaker-input" id="name-speaker-input" class="ma-form-control" maxlength="70" required>
+											<label for="name-input">Имя события</label>
+											<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div> -->
+								</div>				
+								</div>
+								</div>
+								<div class="ma-wrap-btn">
+									<div class="ma-wrap-load-more">
+										<a id="ma-load-more-ukr">Завантажити ще</a>
+									</div>
+									<div class="ma-wrap-btn-add">
+										<button type="submit" id="ma-add-event" class="ma-btn">Додати</button>
+									</div>
+								</div>
+								
+							</form>
+						</div>
+						<div class="ma-current-event">
+							<h3>Поточні івенти</h3>
+							<div class="ma-tabs-city ma-tabs">
+								<ul class="ma-tabs-caption-city">
+									<li class="active"><a href="#first-tab-city-ukr">Київ</a></li>
+									<li><a href="#second-tab-city-ukr">Одеса</a></li>
+									<li><a href="#third-tab-city-ukr">Львів</a></li>
+									<li><a href="#fourth-tab-city-ukr">Вінниця</a></li>
+									<li><a href="#fifth-tab-city-ukr">Тернопіль</a></li>
+									<li><a href="#sixth-tab-city-ukr">Запоріжжя</a></li>
+									<li><a href="#seventh-tab-city-ukr">Харків</a></li>
+									<li><a href="#eighth-tab-city-ukr">Миколаїв</a></li>
+									<li><a href="#ninth-tab-city-ukr">Херсон</a></li>
+								</ul>
+								<div class="ma-current-event-content">
+									<div id="first-tab-city-ukr" class="tabs-content-city-ukr">
+										<form action="" id="form-current-event-urk" class="form-current">
+											<img src="img/addImage.jpg" alt="" class="ma-current-img">
+											<div class="ma-container-current-event">
+											<div class="ma-field">
+										<input type="text" name="name-input" id="cur-name-ukr" class="ma-form-control" maxlength="70" required>
+										<label for="cur-name-ukr">Назва події</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<select id="cur-city-input" name="city-input" class="ma-form-control" required>
+											<option value="">Виберіть місто</option>
+  											<option value="Kyiv">Київ</option>
+  											<option value="Kherson">Херсон</option>
+  											<option value="Lutsk">Луцьк</option>
+  											<option value="Frankivsk">Івано-Франківськ</option>
+  											<option value="Cherkasy">Черкаси</option>
+  											<option value="Kharkiv">Харків</option>
+  											<option value="Dnipro">Дніпро</option>
+  											<option value="Zhytomyr">Житомир</option>
+  											<option value="Zaporizhia">Запоріжжя</option>
+  											<option value="Mykolaiv">Миколаїв</option>
+  											<option value="Ternopil">Тернопіль</option>
+  											<option value="Vinnytsia">Вінниця</option>
+  											<option value="Lviv">Львів</option>
+  											<option value="Odessa">Одеса</option>
+										</select>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div> 
+									<div class="ma-field">
+										<select id="cur-specialty-input" name="specialty-input" class="ma-form-control" required>
+											<option value="">Виберіть спеціальність</option>
+  											<option value="44">Android</option>
+  											<option value="46">FrontEnd</option>
+  											<option value="48">Java</option>
+  											<option value="50">C#</option>
+  											<option value="52">QA</option>
+  											<option value="54">PHP</option>
+  											<option value="56">Python</option>
+  											<option value="58">ISTQB</option>
+  											<option value="60">English</option>
+  											<option value="62">ОП</option>
+  											<option value="104">QA auto</option>
+  											<option value="106">QA mobile</option>
+  											<option value="108">Scrum and Agile</option>
+  											<option value="110">React</option>
+  											<option value="112">BigData</option>
+  											<option value="610">Main School</option>
+  											<option value="846">Альтернативна школа</option>
+  											<option value="848">IT-School</option>
+  											<option value="850">Табір</option>
+										</select>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div> 
+									<div class="ma-field">
+										<input type="datetime-local" name="datetime-input" id="cur-date-input" class="ma-form-control" value="2018-05-01T08:30" required>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="number" name="number-input" id="cur-number-input" class="ma-form-control" min="0" required>
+										<label for="cur-number-input">Ціна</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="text" name="url-input" id="cur-url-input" class="ma-form-control" maxlength="70" required>
+										<label for="cur-url-input">URL</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									</div>
+									<div class="ma-container-current-event ma-current-event-more-ukr">
+									<div class="ma-current-event-display">
+									<div class="ma-field wrap-tinymce">
+										<textarea name="desription" id="description-input" class="tinymce ma-form-control" maxlength="300" rows="4" cols="50" required></textarea>
+										<p class="ma-icon-info ma-icon-tinymce"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field wrap-tinymce">
+										<textarea name="desription" id="cur-description-input" class="tinymce ma-form-control" maxlength="300" rows="4" cols="50" required></textarea>
+										<p class="ma-icon-info ma-icon-tinymce"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<select name="tevent-input" id="cur-source-input" class="ma-form-control" required>
+											<option value="">Виберіть джерело</option>
+											<option value="SELF">Заявка</option>
+											<option value="WEB">Сайт</option>
+											<option value="WEBFORM">Шара</option>
+											<option value="EMAIL">E-mail розсилання</option>
+											<option value="4">Чат</option>
+											<option value="CALL">Facebook</option>
+											<option value="ADVERTISING">Vkontakte</option>
+											<option value="CALLBACK">Зворотний дзвінок</option>
+											<option value="2">DOU</option>
+											<option value="1">Linkedin</option>
+											<option value="5">Білет IT</option>
+											<option value="RECOMMENDATION">За рекомендацією</option>
+											<option value="3">Rabota.ua</option>
+											<option value="7">Work.ua</option>
+											<option value="6">Dесняна акція</option>
+											<option value="OTHER">Інше</option>
+										</select>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>						
+									<div class="ma-field">
+										<input type="text" name="typeevent-input" id="cur-tevent-input" class="ma-form-control" maxlength="70" required>
+										<label for="cur-tevent-input">Тип події</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="time" id="cur-duration-input" class="ma-form-control">
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="text" name="wroom-input" id="cur-wroom-input" class="ma-form-control" maxlength="70" required>
+										<label for="cur-wroom-input">Вебінарна кімната</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<label for="cur-check-input" class="container-checkbox">
+											<input type="checkbox" name="checkbox" id="cur-check-input" class="ma-form-control">SEO<span class="checkmark"></span>
+										</label>
+									</div>	
+								<h3>Сторінка івента</h3>
+								<div class="ma-wrap-page-event">
+									<div class="ma-header-page-event">
+										<div class="ma-field">
+											<input type="text" name="title-input" id="cur-title-input" class="ma-form-control" maxlength="70" required>
+											<label for="cur-title-input">Заголовок на главному екрані</label>
+											<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+										<div class="ma-field">
+											<input type="text" name="main-subtitle-input" id="cur-main-subtitle-input" class="ma-form-control" maxlength="70" required>
+											<label for="cur-main-subtitle-input">Підзаголовок на главному екрані</label>
+											<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+									</div>
+									<h4>Про івент</h4>
+									<div class="ma-about-page-event">
+										<div class="ma-field">
+											<input type="text" name="subtitle-input" id="cur-subtitle-input" class="ma-form-control" maxlength="70" required>
+											<label for="cur-suntitle-input">Підзаголовок</label>
+											<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+										<div class="ma-field wrap-tinymce">
+											<textarea name="page-desription" id="cur-page-description-input" class="tinymce ma-form-control" maxlength="300" rows="4" cols="40" required></textarea>
+											<p class="ma-icon-info ma-icon-tinymce"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+										<div class="ma-field select-media">
+											<select id="cur-pv-input" name="pv[]" class="ma-form-control">
+												<option value="">Виберіть тип медіа файла</option>
+  												<option value=".photo">Фотографія</option>
+  												<option value=".video">Відео</option>
+											</select>
+											<div class="value photo">
+												<button class="ma-select-img-event ma-btn">Вибрати фотографію</button>
+											</div>
+											<div class="value video">
+												<input type="text" name="url-input" id="cur-url-video-input" class="ma-form-control" maxlength="70" required>
+												<label for="cur-url-video-input">URL</label>
+											</div>
+										</div>
+									</div>
+									<h4>Спікери</h4>
+									<div class="ma-speaker-page-event">
+										<div class="ma-add-new-event-photo">
+											<div class="ma-empty-img"><span>110x110</span></div>
+											<button class="ma-choose-img ma-btn">Додати фотографію</button>
+										</div>
+										<div class="ma-field">
+										<input type="text" name="name-input" id="cur-names-input" class="ma-form-control" maxlength="70" required>
+										<label for="cur-names-input">Ім'я спікера</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+									<div class="ma-field">
+										<input type="text" name="position-input" id="cur-position-input" class="ma-form-control" maxlength="70" required>
+										<label for="cur-position-input">Посада</label>
+										<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div>
+										<div class="ma-field wrap-tinymce">
+											<textarea name="skills" id="cur-skills-input" class="tinymce ma-form-control" maxlength="300" rows="4" cols="50" required></textarea>
+											<p class="ma-icon-info ma-icon-tinymce"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+										</div>
+									</div>
+									<!-- <div class="ma-speaker-page-event">
+										<input type="text" name="name-speaker-input" id="name-speaker-input" class="ma-form-control" maxlength="70" required>
+											<label for="name-input">Имя события</label>
+											<p class="ma-icon-info"><i class="fas fa-info-circle"></i><span class="ma-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsa</span></p>
+									</div> -->
+								</div>				
+								</div>
+								</div>
+								<div class="ma-wrap-btn">
+									<div class="ma-wrap-load-more">
+										<a id="ma-load-current-more-ukr" class="ma-load-current-more">Развернуть</a>
+									</div>
+									<div class="ma-wrap-btn-edit">
+										<button id="ma-edit-current-event" class="ma-btn">Редагувати</button>
+										<button id="ma-delete-current-event" class="ma-btn">Видалити</button>
+									</div>
+								</div>
+										</form>
+									</div>
+									<div id="second-tab-city-ukr" class="tabs-content-city"></div>
+								</div>
+								
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+</body>
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="libs/tinymce/js/tinymce/tinymce.min.js"></script>
+<script src="libs/tinymce/js/tinymce/init-tinymce.js"></script>
+</html>
