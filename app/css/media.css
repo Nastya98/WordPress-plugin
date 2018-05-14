@@ -1,6 +1,11 @@
 @media only screen and (max-width: 768px) {
   #ma-wrapper #ma-container-event .ma-add-new-event {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 3rem 0; }
   .ma-add-new-event-photo {
@@ -10,7 +15,12 @@
   .ma-current-event-content {
     padding: 3rem 4rem; }
   .ma-current-event-content .tabs-content-city .form-current, .ma-current-event-content .tabs-content-city-ukr .form-current {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap; }
   .ma-current-event-content .tabs-content-city .form-current .ma-current-img, .ma-current-event-content .tabs-content-city-ukr .form-current .ma-current-img {
     margin-bottom: 1rem;
@@ -19,6 +29,14 @@
   .ma-current-event-content .tabs-content-city .form-current .ma-header-page-event .ma-field:not(.wrap-tinymce), .ma-current-event-content .tabs-content-city-ukr .form-current .ma-header-page-event .ma-field:not(.wrap-tinymce) {
     width: 100%; }
   .ma-current-event-content .tabs-content-city .form-current .ma-container-current-event .wrap-tinymce, .ma-current-event-content .tabs-content-city-ukr .form-current .ma-container-current-event .wrap-tinymce {
+    width: 100%; } }
+
+@media only screen and (max-width: 480px) {
+  #ma-wrapper #ma-container-event .ma-add-new-event {
+    padding: .5rem; }
+  .ma-form-add .ma-add-new-event-item .ma-field, .ma-form-add .ma-add-new-more .ma-add-event-display .ma-field {
+    width: 100% !important; }
+  .ma-add-new-event-photo {
     width: 100%; } }
 
 @media only screen and (max-width: 480px) {

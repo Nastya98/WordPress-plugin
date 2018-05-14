@@ -70,7 +70,7 @@ $(function () {
   });
   //Add speaker
    $("#add-speaker").click(function () {
-  var speaker = $('.ma-wrap-page-event #ma-add-speaker').clone();
-  $('#add-speaker').append(speaker);
+  var speaker = $('.ma-add-speaker:first').clone();
+  $('.ma-wrap-page-event .ma-speaker-page-event').append(speaker);
 });
 });

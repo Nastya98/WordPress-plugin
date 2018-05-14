@@ -16,6 +16,9 @@ h3
 	width: 100%
 h4, h3
 	margin-bottom: 2rem
+%same-display
+	display: flex
+	justify-content: space-between
 .ma-tabs-lang, .ma-tabs-city
 	.ma-tabs-caption, .ma-tabs-caption-city
 		box-shadow: inset 0 -1px 0 #d0d0d0
@@ -47,19 +50,18 @@ h4, h3
 	#ma-empty
 		width: 10rem
 		background-color: #23282d
-		height: 43rem
+		height: auto
 	#ma-container-event
 		width: 100%
 		height: auto
 		margin: .625rem 1.125rem 0 1.125rem
 		.ma-add-new-event
+			@extend %same-display
 			height: auto
 			max-width: 100%
 			background-color: #fff
 			padding: 3rem
-			display: flex
 			font-size: 1rem
-			justify-content: space-between
 			border-right: 1px solid #d0d0d0
 			border-left: 1px solid #d0d0d0
 			border-bottom: 1px solid #d0d0d0
@@ -81,28 +83,21 @@ h4, h3
 		&:hover
 			background-color: #28a297
 .ma-form-add
-	display: flex
+	@extend %same-display
 	flex-direction: column
-	justify-content: space-between
 	width: 80%
 	.ma-add-new-event-item
+		@extend %same-display
 		width: 100%
-		display: flex
 		flex-wrap: wrap
-		justify-content: space-between
 		&:nth-child(1) .ma-field
 			width: 16rem
-	// .ma-add-new-event-item:nth-child(2)
-	// 	width: 30%
-	// .ma-add-new-event-item:nth-child(3)
-	// 	width: 100%
 	.ma-add-new-more
 		display: none
 		margin-top: 17px
 		.ma-add-event-display
-			display: flex
+			@extend %same-display
 			flex-flow: row wrap
-			justify-content: space-between
 			.ma-field:not(.wrap-tinymce)
 				width: 16rem
 				display: inline-block
@@ -111,8 +106,7 @@ h4, h3
 		.ma-add-new-event-item
 			height: auto
 .ma-wrap-btn
-	display: flex
-	justify-content: space-between
+	@extend %same-display
 	align-items: flex-end
 	.ma-wrap-load-more
 		#ma-load-more, .ma-load-current-more, #ma-load-more-ukr
@@ -251,9 +245,8 @@ h4, h3
 				float: left
 				margin-right: 2rem
 			.ma-container-current-event
-				display: flex
+				@extend %same-display
 				flex-wrap: wrap
-				justify-content: space-between
 				.ma-field:not(.wrap-tinymce)
 					width: 15rem
 				.wrap-tinymce
@@ -261,8 +254,7 @@ h4, h3
 			.ma-current-event-more-ru, .ma-current-event-more-ukr
 				display: none
 				.ma-current-event-display
-					display: flex
-					justify-content: space-between
+					@extend %same-display
 					flex-wrap: wrap
 			.ma-wrap-btn
 				.ma-wrap-btn-edit
@@ -304,12 +296,22 @@ h4, h3
 					&~ label
 						font-size: 0.9rem
 	.ma-speaker-page-event
-		display: flex
-		justify-content: space-between
-		flex-flow: wrap row
-		.ma-add-new-event-photo
-			width: auto
-			margin-bottom: 2rem
-		& .ma-field:not(.wrap-tinymce)
-			width: 17rem !important
+		.ma-add-speaker
+			@extend %same-display
+			flex-flow: wrap row
+			.ma-add-new-event-photo
+				width: auto
+				margin-bottom: 2rem
+			& .ma-field:not(.wrap-tinymce)
+				width: 17rem !important
+	#add-speaker
+		color: #333
+		display: inline-block
+		border: 2px solid #fbc06b
+		.plus-icon
+			padding-right: 0.6rem
+			color: #fbc06b
+		&:hover
+			color: #8e8e8e
+
 
